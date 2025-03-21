@@ -28,7 +28,6 @@ function PieChartGraph() {
       </div>
 
       <div className="relative h-[250px]">
-        {/* Legend - Left Side */}
         <div className="absolute left-10 bottom-1 flex flex-col items-center justify-center ">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-3 h-3 rounded-full bg-[#6359E9]"></div>
@@ -37,7 +36,6 @@ function PieChartGraph() {
           <span className="text-white ">55%</span>
         </div>
 
-        {/* Chart */}
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie

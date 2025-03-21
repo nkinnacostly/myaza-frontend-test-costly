@@ -47,7 +47,6 @@ const transactions: Transaction[] = [
     status: "Deposited",
     logo: "/levi.svg",
   },
-  // Add more transactions as needed
 ];
 
 export function TransactionsTable() {

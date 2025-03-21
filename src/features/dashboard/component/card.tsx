@@ -77,7 +77,6 @@ function Card({
         </p>
       </div>
 
-      {/* Credit Card Carousel */}
       <div className="relative overflow-hidden h-[200px]">
         <AnimatePresence initial={false} custom={currentIndex} mode="popLayout">
           <motion.div
@@ -126,7 +125,6 @@ function Card({
         </AnimatePresence>
       </div>
 
-      {/* Indicators */}
       <div className="flex justify-center gap-2 my-4">
         {cards.map((_, index) => (
           <motion.span
@@ -150,7 +148,6 @@ function Card({
         ))}
       </div>
 
-      {/* Action Buttons */}
       <div className="flex gap-4">
         <Button className="flex-1 bg-tertiary text-primary py-3 rounded-xl hover:bg-opacity-40 transition-all">
           Manage Cards
