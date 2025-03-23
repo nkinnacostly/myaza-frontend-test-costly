@@ -27,6 +27,7 @@ export function useInteractiveEvent({
     (e: InputFocusEvent) => {
       if (readOnly === true) return false;
       setIsFocus((prevState) => !prevState);
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       onFocus && onFocus(e);
       return;
     },
@@ -37,6 +38,7 @@ export function useInteractiveEvent({
     (e: InputFocusEvent) => {
       if (readOnly === true) return false;
       setIsFocus(() => false);
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       onBlur && onBlur(e);
       return;
     },
@@ -47,6 +49,7 @@ export function useInteractiveEvent({
     (e: InputMouseEvent) => {
       if (readOnly === true) return false;
       setIsHover(() => true);
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       onMouseEnter && onMouseEnter(e);
       return;
     },
@@ -58,6 +61,7 @@ export function useInteractiveEvent({
     (e: InputMouseEvent) => {
       if (readOnly === true) return false;
       setIsHover(() => false);
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       onMouseLeave && onMouseLeave(e);
       return;
     },

@@ -108,8 +108,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       handleOnMouseLeave,
     } = useInteractiveEvent({
       readOnly,
-      onBlur,
-      onFocus,
+      onBlur: onBlur as (e: React.FocusEvent<unknown>) => void,
+      onFocus: onFocus as (e: React.FocusEvent<unknown>) => void,
     });
 
     return (
