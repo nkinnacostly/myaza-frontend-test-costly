@@ -56,7 +56,7 @@ export function TestimonialCarousel({
   return (
     <div
       className={cn(
-        "relative flex flex-col items-start justify-start gap-8",
+        "relative flex flex-col items-start justify-start gap-8 text-white",
         className
       )}
     >
