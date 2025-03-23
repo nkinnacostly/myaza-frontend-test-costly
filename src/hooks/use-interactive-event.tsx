@@ -2,8 +2,8 @@
 
 import React, { useCallback, useState } from "react";
 
-type InputFocusEvent = React.FocusEvent<any>;
-type InputMouseEvent = React.MouseEvent<any, MouseEvent>;
+type InputFocusEvent = React.FocusEvent<unknown>;
+type InputMouseEvent = React.MouseEvent<unknown, MouseEvent>;
 
 type InteractiveEventTypes = {
   readOnly?: boolean;
